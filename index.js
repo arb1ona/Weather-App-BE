@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
     console.log("I got the request")
 })
 
-app.listen(PORT, "127.0.01", () => {
-    console.log(`Server is listening on port ${PORT}`)
+app.listen(PORT, () => {
+    console.log(`Server is listeninggg on port ${PORT}`)
 })
 
