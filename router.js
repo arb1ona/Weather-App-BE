@@ -19,11 +19,11 @@ router.get('/:locationName', (req, res) => {
             // res.send({woeid: data[0].woeid});
             woeid = data[0].woeid;
             fetch('https://www.metaweather.com/api/location/' + woeid + '/')
-                .then(r => {
-                    return r.json();
+                .then(response => {
+                    return response.json();
                 })
                 .then(d => {
-                    res.setHeader('Accessing Origin', '*');
+                    res.setHeader('Access-Control-Allow-Origin', '*');
                     res.send(d);
                 })
                 .catch(err => {

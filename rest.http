@@ -1,2 +1,2 @@
-GET http://localhost:5000/forcasts/stockholm/
+GET http://localhost:5005/forcasts/stockholm/
 Content-Type: application/json
